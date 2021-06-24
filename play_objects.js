@@ -12,3 +12,10 @@ console.log(users[0].name);
 for (var i = 0; i < users.length; i++){
     console.log(users[i].name, "-", users[i].age);
 }
+
+// imprimir los mayores de edad
+for (var mayorEdad in users){
+    if(users[mayorEdad].age >= 18){
+        console.log(users[mayorEdad].name);
+    }
+}
